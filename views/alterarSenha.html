@@ -1,0 +1,66 @@
+<div ng-controller="alterarSenhaCtrl">
+	<script>
+		$(document).ready(function(){
+			$('input#email').characterCounter();
+			$("#email").select();
+  		  	$("#email").focus();
+		});
+
+	</script>
+
+	<!-- header -->
+	<header class="no-select">
+
+	</header>
+
+	<!-- Main-->
+	<main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+
+          <form ng-submit="alterarSenha(email, novaSenha, confirmarSenha)">
+
+            <div class="card">
+              <div class="card-image">
+                <img src="resources/images.jpg">
+                <span class="card-title">
+                  <h2>Cake's</h2>
+                </span>
+              </div>
+
+              <div class="card-content">
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input class="validate" id="email" ng-model="email" type="email" disabled>
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input class="validate" id="novaSenha" ng-model="novaSenha" type="password">
+                  <label for="email">Nova Senha</label>
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input class="validate" id="confirmarSenha" ng-model="confirmarSenha" type="password">
+                  <label for="email">Confirmar Senha</label>
+                </div>
+
+              </div>
+
+            <div class="card-action">
+				<div class="center">
+                	<button type="submit" class="waves-effect btn red lighten-1" ng-disabled="!email">Confirmar</button>
+              	</div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+	<script type="text/javascript" src="js/datapicker.js"></script>
+</div>
