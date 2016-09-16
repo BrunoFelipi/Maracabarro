@@ -1,13 +1,13 @@
 app.config(function($routeProvider){
     $routeProvider
     .when('/', {
-        templateUrl: 'views/todos.html'
+        templateUrl: 'views/login.html'
     })
     .when('/login', {
         templateUrl: 'views/login.html'
     })
-    .when('/todos', {
-        templateUrl: 'views/todos.html'
+    .when('/principal', {
+        templateUrl: 'views/principal.html'
     })
     .when('/novaCuca', {
         templateUrl: 'views/novaCuca.html'

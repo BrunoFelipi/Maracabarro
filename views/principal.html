@@ -1,4 +1,4 @@
-<div ng-controller="todosCtrl">
+<div ng-controller="principalCtrl">
 	<script>
 		$(document).ready(function(){
 			$(".button-collapse").sideNav({closeOnClick: true});
@@ -9,17 +9,22 @@
 	<!-- header -->
 	<header class="no-select">
 		<nav>
-			<a href="" data-activates="slide-out" class="button-collapse show-on-small"><i class="material-icons">menu</i></a>
+			<a href="" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
 			<ul id="slide-out" class="side-nav">
-				<li><a href="#/todos">Todos</a></li>
-				<li><a href="#/minhas">Minhas Cucas</a></li>
-				<li><a href="#/novaCuca">Nova Cuca</a></li>
-				<li><a href="#/login">Sair</a></li>
+				<li><i class="material-icons">power_settings_new</i><a href="#/todos">Histórico de Jogos</a></li>
+				<li><a href="#/todos">Calendário</a></li>
+				<li><a href="#/todos">Finanças</a></li>
+				<li><a href="#/todos">Comunicados</a></li>
+				<li><a href="#/todos">Eventos</a></li>
+				<li><a href="#/todos">Configuração</a></li>
+				<li><a href="#/todos">Conta</a></li>
+				<li><a href="#/todos">Sair</a></li>
+
 			</ul>
-			<div class="brown darken-1">
+			<div class="orange accent-4">
 				<div class="container">
 					<div class="nav-wrapper">
-						<a href="#/todos" class="brand-logo">Cake's</a>
+						<a href="#/todos" class="brand-logo">Maracabarro</a>
 						<ul class="right hide-on-med-and-down">
 							<li class="active"><a href="#/todos">Todas</a></li>
 							<li><a href="#/minhas">Minhas Cucas</a></li>
@@ -32,14 +37,6 @@
 		<div id="progress" class="progress brown lighten-4" ng-show="progress">
 			<div class="indeterminate red lighten-2"></div>
 		</div>
-		<div class="center-align">
-			<a href="#/novaCuca" id="add" class="btn-floating btn-large waves-effect waves-light red lighten-1 hide-on-med-and-down"><i class="material-icons">add</i></a>
-		</div>
-		<div class="fixed-action-btn hide-on-large-only" style="bottom: 15px; right: 15px;">
-		    <a href="#/novaCuca" class="btn-floating btn-large waves-effect waves-light red lighten-1">
-		    	<i class="large material-icons">add</i>
-		    </a>
-		</div>
 	</header>
 
 	<!-- Main-->
@@ -50,7 +47,8 @@
 				<div class="col s12 m6 l3" ng-repeat="cuca in cucas">
 					<div class="card">
 						<div class="card-image no-select">
-							<img src="resources/cakes0.png" height="250px">
+							<!--<img src="resources/cakes0.png" height="250px">-->
+							<img src="" height="250px">
 							<span class="card-title white-text">{{cuca.titulo}}</span>
 						</div>
 						<div class="card-content">
@@ -70,18 +68,18 @@
 	</main>
 
 	<!-- footer -->
-	<footer class="page-footer  brown darken-1">
+	<footer class="page-footer black accent-4">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m6 l6">
-					<h4 class="white-text">Cakes</h4>
+					<h4 class="white-text">Maracabarro</h4>
 					<p class="white-text">Aproveite para divulgar suas cucas na sua empresa, casa, sítio, etc. Não esqueça de marcar sua cuca no dia de seu aniversário, colabore!</p>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2016 Copyright - Vinícius Reif Biavatti
+				© 2016 Copyright - Maracabarro FC
 			</div>
 		</div>
 	</footer>
