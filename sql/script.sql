@@ -1,5 +1,5 @@
-create database cucamanager;
-use cucamanager;
+create database maracabarro;
+use maracabarro;
 
 /*
  * Usuario
@@ -10,21 +10,18 @@ create table usuario (
   email varchar(50),
   senha varchar(50),
   token varchar(32),
+  dataAniversario date,
   ativo char(1)
 );
-insert into usuario values (0,'admin','adminadmin',"S");
+insert into usuario values (0,'admin','admin@admin.com.br','senha','token','S');
 
 /*
- * Cucas
+ * Configurações
  */
-create table cuca (
+create table app (
   id int(8) primary key auto_increment,
-  id_usuario int(8),
-  titulo varchar(50),
-  descricao varchar(50),
-  data date,
-  preco float(6,2),
-  ativo char(1)
+  nomeApp varchar(50),
+  textoRodape varchar(500),
 );
 
 /*

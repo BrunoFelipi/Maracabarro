@@ -1,3 +1,3 @@
 <?php
-    $conexao = mysqli_connect('localhost','root','','cucamanager');
+    $conexao = mysqli_connect('localhost','root','','maracabarro');
 ?>

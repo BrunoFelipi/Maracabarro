@@ -17,7 +17,7 @@ app.controller('loginCtrl', function($scope, UsuarioService, toastr, $timeout, $
 
                 UsuarioService.select(usuario.email).then(function(response){
                     $rootScope.usuario = response.data[0];
-                    $location.path('todos');
+                    $location.path('principal');
                 },function(error){
                     toastr.error('Erro ao conectar ao servidor','Erro');
                 });

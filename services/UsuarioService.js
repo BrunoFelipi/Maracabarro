@@ -31,21 +31,21 @@ app.factory('UsuarioService', function($http){
         existEmail: function(email){
             return $http({
                 method: 'get',
-                url: WS_URL + 'usuario/existEmail.php',
+                url: WS_URL + 'usuario/email/existEmail.php',
                 params: {email: email}
             });
         },
         enviarEmailEsqueceuSenha: function(email, token){
             return $http({
                 method: 'get',
-                url: WS_URL + 'usuario/enviarEmailEsqueceuSenha.php',
+                url: WS_URL + 'usuario/email/enviarEmailEsqueceuSenha.php',
                 params: {email: email, token: token}
             });
         },
         enviarEmailAlterouSenha: function(email){
             return $http({
                 method: 'get',
-                url: WS_URL + 'usuario/enviarEmailAlterouSenha.php',
+                url: WS_URL + 'usuario/email/enviarEmailAlterouSenha.php',
                 params: {email: email}
             });
         },

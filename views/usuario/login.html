@@ -3,10 +3,10 @@
 
 	    $(document).ready(function(){
 	      $('.tooltipped').tooltip({delay: 50});
-		  $("#email").select();
-		  $("#senha").select();
-		  $("#email").focus();
-		  $("input#email, input#senha").characterCounter();
+			  $("#email").select();
+			  $("#senha").select();
+			  $("#email").focus();
+			  $("input#email, input#senha").characterCounter();
 	    });
 
 	    function removeTooltip(){
@@ -29,7 +29,6 @@
 
             <div class="card">
               <div class="card-image">
-                <!--<img src="resources/images.jpg">-->
 								<img src="resources/maracabarro2.png">
                 <span class="card-title">
                   <h2>Maracabarro</h2>
@@ -50,11 +49,11 @@
               </div>
 
             <div class="card-action">
-              <button type="submit" class="waves-effect btn deep-orange">Login</button>
+              <button type="submit" class="waves-effect btn deep-orange darken-4">Login</button>
 
 							<div class="right">
-								<a href="#/cadastro" class="waves-effect btn orange darken-1 hide-on-med-and-down">Registrar</a>
-								<a href="#/esqueceuSenha" class="waves-effect btn orange darken-1 hide-on-med-and-down">Esqueci a senha</a>
+								<a href="#/cadastro" class="waves-effect btn orange darken-3 hide-on-med-and-down">Registrar</a>
+								<a href="#/esqueceuSenha" class="waves-effect btn orange darken-3 hide-on-med-and-down">Esqueci a senha</a>
 							</div>
 
             </div>
@@ -63,12 +62,12 @@
       </div>
 
   <div class="fixed-action-btn horizontal hide-on-large-only" style="bottom: 15px; right: 15px;">
-    <a class="btn-floating btn-large red darken-1">
+    <a class="btn-floating btn-large deep-orange darken-4">
       <i class="large material-icons">settings</i>
     </a>
     <ul>
-      <li><a href="#/cadastro" class="btn-floating red lighten-1 tooltipped" data-position="top" data-delay="1" data-tooltip="Cadastre-se" onclick="removeTooltip()"><i class="material-icons">add</i></a></li>
-      <li><a href="#/esqueceuSenha" class="btn-floating red lighten-1 tooltipped" data-position="top" data-delay="1" data-tooltip="Esqueceu sua senha?" onclick="removeTooltip()"><i class="material-icons">https</i></a></li>
+      <li><a href="#/cadastro" class="btn-floating orange darken-3 tooltipped" data-position="top" data-delay="1" data-tooltip="Cadastre-se" onclick="removeTooltip()"><i class="material-icons">add</i></a></li>
+      <li><a href="#/esqueceuSenha" class="btn-floating orange darken-3 tooltipped" data-position="top" data-delay="1" data-tooltip="Esqueceu sua senha?" onclick="removeTooltip()"><i class="material-icons">https</i></a></li>
     </ul>
   </div>
 
